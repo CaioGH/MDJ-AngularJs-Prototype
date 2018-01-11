@@ -1,8 +1,15 @@
+/*
+   @author: Caio Souza.
+    @description: AngularJs Structure [ App ].
+    @Latest changes: 11.01.2018 / 15:45. 
+
+    @Reference: https://tableless.com.br/criando-uma-aplicacao-single-page-com-angularjs/.    
+*/
+
 var app = angular.module('app',['ngRoute']);
 
 app.config(function($routeProvider, $locationProvider)
 {
-   // remove o # da url
    $locationProvider.html5Mode(true);
 
    $routeProvider
@@ -12,7 +19,7 @@ app.config(function($routeProvider, $locationProvider)
       controller  : 'LoginCtrl',
    })
 
-   // para a rota '/', carregaremos o template home.html e o controller 'HomeCtrl'
+
    .when('/home', {
       templateUrl: 'View/homeView.html',
       controller: 'HomeCtrl',
@@ -23,7 +30,6 @@ app.config(function($routeProvider, $locationProvider)
       controller: 'RegisterCtrl',
    })
 
-
-   // caso não seja nenhum desses, redirecione para a rota '/'
    .otherwise ({ redirectTo: '/' });
+   
 });
