@@ -13,7 +13,7 @@ function validateLogin()
 
 	if (user == "teste" && password == "teste") 
 	{
-		window.location = "homeView.html";
+		window.location = "home.html";
 	}
 
 	else
