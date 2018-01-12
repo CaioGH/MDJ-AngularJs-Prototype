@@ -16,6 +16,14 @@ article{
     margin-top: 30px;
  }
 
+table{
+	border-collapse: collapse;
+	background-color: white;
+
+}
+
+
+
 #menu{
 	background-color: #B22222;
 	height: 50px;

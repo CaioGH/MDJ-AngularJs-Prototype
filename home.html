@@ -1,6 +1,10 @@
 <!--@author: Caio Souza.
-    @description: Index Single Page.
-    @Latest changes: 11.01.2018 / 15:37. 
+    @description: Home ~~ //Single Page.
+    @Latest changes: 12.01.2018 / 11:20. 
+
+
+
+    EM CONSTRUÇÃO/TESTE.
 -->
 <!DOCTYPE html>
 <html ng-app="app">
@@ -55,12 +59,26 @@
   <h1> Seja Bem Vindo! </h1>
   
 <div class="box container col-xs-7">
-  <h3>Usuários Registrados: </h3>
+  <h3>Usuários</h3>
+
+<form>
+<h5>Adicionar usuário: </h5>
+<div class="form-group">
+        <label for="user">Nome:</label>
+        <input placeholder="Informe o nome do usuário." type="text" class="form-control" name="userName" id="userName" required="true"/>
+    </div>
+
+<button type="submit" value="submit" class="btn btn-defaul" onClick="addUser()"> Adicionar </button>
+</form>
+
+
+<br>
+<h5>Usuários Registrados: </h5>
 
 <table border="1">
 
 <script language="javascript" type="text/javascript">
-<!--
+
 
 var myArray    = new Array();
     myArray[1] = "João";
@@ -69,8 +87,8 @@ var myArray    = new Array();
     myArray[4] = "Gabriela";
    
 for (var i=1; i<=4; i++) {
-  document.write("<tr><td>" + i + "</td>");
-  document.write("<td>" + myArray[i] + "</td></tr>");
+  document.write("<th><tr><td>" + i + "</td></th>");
+  document.write("<th><td>" + myArray[i] + "</td></tr></th>");
 }
 
 //-->
@@ -79,7 +97,6 @@ for (var i=1; i<=4; i++) {
 
 </article>
   
-
 
 </body>
 </html>
