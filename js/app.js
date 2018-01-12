@@ -19,7 +19,6 @@ app.config(function($routeProvider, $locationProvider)
       controller  : 'LoginCtrl',
    })
 
-
    .when('/home', {
       templateUrl: 'View/homeView.html',
       controller: 'HomeCtrl',
