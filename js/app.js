@@ -15,17 +15,17 @@ app.config(function($routeProvider, $locationProvider)
    $routeProvider
 
    .when('/login', {
-      templateUrl : 'View/loginView.html',
+      templateUrl : 'views/loginView.html',
       controller  : 'LoginCtrl',
    })
 
    .when('/home', {
-      templateUrl: 'View/homeView.html',
+      templateUrl: 'views/homeView.html',
       controller: 'HomeCtrl',
    })
 
     .when('/register', {
-      templateUrl: 'View/registerView.html',
+      templateUrl: 'views/registerView.html',
       controller: 'RegisterCtrl',
    })
 
