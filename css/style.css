@@ -16,10 +16,8 @@ article{
     margin-top: 30px;
  }
 
-table{
-	border-collapse: collapse;
-	background-color: white;
-
+ul {
+    list-style-image: url('../img/usericon.png');
 }
 
 .show{
@@ -27,6 +25,8 @@ table{
 	background-color: lightgray;
 	width: 400px;
 	height: 80px;
+	border: 1px solid  #ffff32;
+	border-radius: 5px 5px 5px 5px;
 	overflow-y: scroll;
 }
 

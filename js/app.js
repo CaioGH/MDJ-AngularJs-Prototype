@@ -14,21 +14,29 @@ app.config(function($routeProvider, $locationProvider)
 
    $routeProvider
 
+
+     .when('/', {
+      templateUrl : 'templates/indexView.html',
+      controller  : 'IndexCtrl',
+   })
+
    .when('/login', {
-      templateUrl : 'views/loginView.html',
+      templateUrl : 'templates/loginView.html',
       controller  : 'LoginCtrl',
    })
 
    .when('/home', {
-      templateUrl: 'views/homeView.html',
+      templateUrl: 'templates/homeView.html',
       controller: 'HomeCtrl',
+      
    })
 
     .when('/register', {
-      templateUrl: 'views/registerView.html',
+      templateUrl: 'templates/registerView.html',
       controller: 'RegisterCtrl',
    })
 
    .otherwise ({ redirectTo: '/' });
    
-});
+})
+

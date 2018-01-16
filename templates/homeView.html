@@ -1,0 +1,19 @@
+<script src="js/arrayController.js"></script>
+
+<article class="col-xs-10">
+      <h1> Seja Bem Vindo! </h1>
+        <div class="box container col-xs-7">
+          <h3>Usuários</h3>
+            <div ng-controller="nameList">
+              <form class="form-group" name="formItem">
+                <input type="text" ng-model="itemList.name">
+                <button class="btn btn-outline-danger btn-sm" ng-click="addName()">Adicionar</button>
+              </form>
+              <div class="show">
+                <ul ng-repeat="itemList in list">
+                  <li>{{ itemList.name }}</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+</article>
