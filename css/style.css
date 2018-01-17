@@ -21,6 +21,7 @@ ul {
 }
 
 .show{
+	padding-top: 10px;
 	color: black;
 	background-color: lightgray;
 	width: 400px;
